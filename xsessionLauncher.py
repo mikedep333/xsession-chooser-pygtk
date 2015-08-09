@@ -1,15 +1,15 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 #
 # -*- coding: utf-8 -*-
-import sys
 import configparser
-import subprocess
+import os
+import sys
+from subprocess import call
 
-class xsessionLauncher(object):
-    def launch(filepath):
-        config = configparser.ConfigParser()
-        config.sections()
-        config.read(filepath)
-        xsession = config['Desktop Entry']
-        os.environ['XDG_CURRENT_DESKTOP'] = xsession['DesktopNames']
-        call(xsession['Exec'])
+def launch(filepath):
+    config = configparser.ConfigParser()
+    config.sections()
+    config.read(filepath)
+    xsession = config['Desktop Entry']
+    os.environ['XDG_CURRENT_DESKTOP'] = xsession['DesktopNames']
+    call(xsession['Exec'])

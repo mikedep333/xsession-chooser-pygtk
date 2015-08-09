@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 import os
 import xsessionLauncher
 
@@ -26,5 +26,5 @@ class firstWindow(object):
         Gtk.main()
 
     def launch(self, filechooser):
-        print(filechooser.get_filename())
+        print((filechooser.get_filename()))
         xsessionLauncher.launch(filechooser.get_filename())
