@@ -1,4 +1,4 @@
 import logging
 
-logger = logging.getLogger('template-gui')
+logger = logging.getLogger('xsession-chooser')
 logger.setLevel(logging.DEBUG)

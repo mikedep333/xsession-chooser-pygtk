@@ -3,7 +3,7 @@ import os
 
 from gi.repository import Gtk
 
-gladefile = os.path.join(os.path.dirname(__file__), "template-gui.glade")
+gladefile = os.path.join(os.path.dirname(__file__), "xsession-chooser.glade")
 
 
 class firstWindow(object):
